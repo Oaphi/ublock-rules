@@ -1,0 +1,211 @@
+! Remove empty spaces in grid
+www.youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
+
+! Hide all videos containing the phrase "#shorts"
+www.youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+www.youtube.com##ytd-rich-item-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+
+! Hide all videos with the shorts indicator on the thumbnail
+www.youtube.com##ytd-grid-video-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-rich-item-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-video-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="subscriptions"]:has(ytd-video-renderer:has([overlay-style="SHORTS"]))
+
+! Hide shorts button in sidebar
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+! Tablet resolution
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Shorts$/i))
+
+! Hide shorts sections except on history page
+www.youtube.com##:matches-path(/^(?!\/feed\/history).*$/)ytd-rich-section-renderer:has(#title:has-text(/(^| )Shorts( |$)/i))
+www.youtube.com##:matches-path(/^(?!\/feed\/history).*$/)ytd-reel-shelf-renderer:has(.ytd-reel-shelf-renderer:has-text(/(^| )Shorts( |$)/i))
+
+! Hide shorts tab on channel pages`
+! Old style
+www.youtube.com##tp-yt-paper-tab:has(.tp-yt-paper-tab:has-text(Shorts))
+! New style (2023-10)
+www.youtube.com##yt-tab-shape:has-text(/^Shorts$/)
+
+! Hide short remixes in video descriptions and in suggestions beside the comments
+www.youtube.com##ytd-reel-shelf-renderer:has(#title:has-text(/(^| )Shorts.?Remix.*$/i))
+
+! Hide shorts category on homepage and search pages
+www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+
+! Hide nudges
+www.youtube.com##.ytd-rich-item-renderer:has(ytd-feed-nudge-renderer)
+
+! Upsell dialog
+www.youtube.com##ytd-popup-container:has(yt-upsell-dialog-renderer):remove()
+
+!!! MOBILE !!!
+
+! Hide all videos in home feed containing the phrase "#shorts"
+www.youtube.com##ytm-rich-item-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+
+! Hide all videos in subscription feed containing the phrase "#shorts"
+m.youtube.com##ytm-item-section-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+
+! Hide shorts button in the bottom navigation bar
+m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
+
+! Hide all videos with the shorts indicator on the thumbnail
+m.youtube.com##ytm-video-with-context-renderer:has([data-style="SHORTS"])
+
+! Hide shorts sections except on history page
+m.youtube.com##:matches-path(/^(?!\/feed\/history).*$/)ytm-rich-section-renderer:has(.reel-shelf-title-wrapper .yt-core-attributed-string:has-text(/(^| )Shorts( |$)/i))
+m.youtube.com##:matches-path(/^(?!\/feed\/history).*$/)ytm-reel-shelf-renderer.item:has(.reel-shelf-title-wrapper .yt-core-attributed-string:has-text(/(^| )Shorts( |$)/i))
+
+! Hide shorts tab on channel pages
+! Old style
+m.youtube.com##.single-column-browse-results-tabs>a:has-text(Shorts)
+! New style (2023-10)
+m.youtube.com##yt-tab-shape:has-text(/^Shorts$/)
+
+! Hide short remixes in video descriptions and in suggestions below the player
+m.youtube.com##ytm-reel-shelf-renderer:has(.reel-shelf-title-wrapper .yt-core-attributed-string:has-text(/(^| )Shorts.?Remix.*$/i))
+
+! Hide shorts category on homepage
+m.youtube.com##ytm-chip-cloud-chip-renderer:has(.yt-core-attributed-string:has-text(/^Shorts$/i))
+
+! GitHub now doesn't even work without copilot, ffs
+@@||github.githubassets.com/assets/ui_packages_copilot-chat_components_CopilotIconAnimation_tsx*$script
+@@||github.githubassets.com/assets/ui_packages_copilot-chat_components_ModelPicker_tsx*$script
+@@||github.githubassets.com/assets/ui_packages_copilot-chat_utils_CopilotChatContext_tsx*$script
+@@||github.githubassets.com/assets/ui_packages_copilot-chat_utils_copilot-chat-helpers_ts*$script
+@@||github.githubassets.com/assets/ui_packages_copilot-markdown_MarkdownRenderer_tsx*$script
+@@||github.githubassets.com/assets/ui_packages_global-copilot-menu_GlobalCopilotMenu_tsx-ui_packages_inline-autocomplete_Inline*$script
+@@||github.githubassets.com/assets/ui_packages_copilot-auth-token_copilot-auth-token_ts-ui_packages_diffs_diff-parts_ts-ui_packa*$script
+@@||github.githubassets.com/assets/ui_packages_verified-fetch_verified-fetch_ts-ui_packages_copilot-markdown_MarkdownRenderer_tsx*$script
+@@||github.githubassets.com/assets/ui_packages_global-copilot-menu_GlobalCopilotMenu_tsx-ui_packages_safe-html_VerifiedHTML_tsx*$script
+@@||github.githubassets.com/assets/packages_alive_alive_ts-packages_alive_connect-alive-subscription_ts-packages_copilot-chat*$script
+@@||github.githubassets.com/assets/packages_global-copilot-menu_GlobalCopilotMenu_tsx-packages_inline-autocomplete_InlineAutocom*$script
+@@||github.githubassets.com/assets/packages_copilot-chat_components_ModelPicker_tsx*$script
+@@||github.githubassets.com/assets/packages_copilot-chat_utils_CopilotChatContext_tsx*$script
+@@||github.githubassets.com/assets/packages_copilot-markdown_MarkdownRenderer_tsx*$script
+@@||github.githubassets.com/assets/packages_copilot-coding-agent-status_entry_ts-packages_fetch-headers_fetch-headers_ts-package*$script
+@@||github.githubassets.com/assets/packages_copilot-chat_utils_copilot-chat-helpers_ts*$script
+@@||github.githubassets.com/assets/ui_packages_copilot-auth-token_copilot-auth-token_ts-ui_packages_document-metadata_document-m*$script
+@@||github.githubassets.com/assets/packages_copilot-auth-token_copilot-auth-token_ts-packages_diff-view-settings_types_ts*$script
+@@||github.githubassets.com/assets/packages_copilot-chat_components_CopilotIconAnimation_tsx*$script
+@@||github.githubassets.com/assets/packages_copilot-auth-token_copilot-auth-token_ts-packages_document-metadata*$script
+@@||github.githubassets.com/assets/packages_copilot-chat_components_ChatInput_tsx-packages_global-agents-menu*$script
+@@||github.githubassets.com/assets/packages_copilot-auth-token_copilot-auth-token_ts-packages*$script
+@@||github.githubassets.com/assets/packages_aria-live_aria-live_ts-packages_copilot-chat_utils_copilot-chat-events_ts-packages*$script
+@@||github.githubassets.com/assets/packages_analytics-provider_context_ts-packages*$script
+@@||github.githubassets.com/assets/packages_copilot-chat_utils_copilot-chat-events_ts-packages*$script
+@@||github.githubassets.com/assets/packages_copilot-chat_components_tracing_TraceProvider*$script
+@@||github.githubassets.com/assets/packages_copilot-chat_utils_copilot-local-storage_ts*$script
+
+! Nuke all copilot assets
+||github.githubassets.com/assets/*copilot*
+! More assets
+||github.com/github-copilot*
+! Copilot page
+||github.com/copilot/$document
+||github.com/copilot$document
+! Action fail button
+github.com##button:has(svg.octicon-copilot)
+
+! Stuff on the dashboard 
+github.com##.copilotPreview__container
+! Sidebar entry
+github.com##.ActionListItem:has(a[href="/settings/copilot"])
+! Navbar entry
+github.com##.AppHeader-CopilotChat
+! Search
+github.com##.ActionList-sectionDivider:has(ul > li[data-value="Ask Copilot"]):remove()
+! Profile sidebar
+github.com##[role='dialog'] li:has(a[href="/settings/copilot"]):remove()
+! File preview
+github.com###blob-view-header-copilot-icon
+! Button in the issue sidebar
+github.com##[class^='Box']:has(> [class*='CopilotWorkspaceButton']):remove()
+! Copilot agent mode button in the issue sidebar
+github.com##[class*='CopilotAgentModeButton']:remove()
+! Ask Copilot auto-expanded popup in Docs
+github.com##[class*='Popover'][aria-labelledby^='ai-search']:remove()
+! Ask Copilot popup, but embedded in the Docs footer
+github.com##[id^='ai-search']:upward([class^='Box']):remove()
+github.com##div[class*="CopilotAgentModeButton"]
+
+! Mar 16, 2025 https://arstechnica.com
+arstechnica.com##.in-content-interlude.ars-interlude-container
+
+! Mar 25, 2025 https://app.circleci.com
+app.circleci.com###react-aria8813475324-\:rh\:
+app.circleci.com###react-aria9333941149-\:rh\:
+app.circleci.com##button:has-text(Explain this error)
+
+! Mar 27, 2025 https://grafana.com
+grafana.com##.col--md-7.col--sm-9.col > [href]
+grafana.com##button:has-text(Grot)
+
+! Mar 29, 2025 https://discuss.circleci.com
+discuss.circleci.com###kapa-widget-container
+
+! Discord Ads
+discord.com##div:matches-attr(class="/^wrapper__\w+?$/"):has(iframe:matches-attr(class="/video__\w+/"))
+
+! Try Gemini button on GDrive
+drive.google.com##button[aria-label*='Gemini']:remove()
+drive.google.com##div[class*='gb_je']:has-text(Gemini):remove()
+
+! "Redis for AI" menu button on the Redis website
+redis.io##li.menu-item:has(a[href*="redis-for-ai"]):remove()
+
+# DDG take our survey button
+duckduckgo.com##.js-text-promo:remove()
+
+# Twitch's embedded player autoplaying its crap
+!twitch.tv##[data-a-player-type="channel_home_carousel"]:has(video[playsinline]):remove()
+
+# StackLive (wtf?) modal
+stackoverflow.com###stacklive-helper-cta-popover:remove()
+
+# "AI Assist" left nav button
+askubuntu.com##.js-disable-askstack-new-link:remove()
+mathoverflow.net##.js-disable-askstack-new-link:remove()
+stackoverflow.com##.js-disable-askstack-new-link:remove()
+stackexchange.com##.js-disable-askstack-new-link:remove()
+serverfault.com##.js-disable-askstack-new-link:remove()
+stackapps.com##.js-disable-askstack-new-link:remove()
+superuser.com##.js-disable-askstack-new-link:remove()
+
+# SO Blog individual advertorials about LLMs
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-agents-for-your-digital-chores']):remove()
+
+# ArsTechnica-specific annoyances
+arstechnica.com##.fides-overlay:remove()
+arstechnica.com##body:watch-attr(class):remove-class('fides-no-scroll')
+
+! Jul 28, 2025 https://pinia.vuejs.org
+pinia.vuejs.org##.rulekit
+
+stackblitz.com##[class^='OpenInBold-container']:remove()
+
+docs.docker.com##.open-kapa-widget:remove()
+
+# Reddit "Answers" (LLM bullshit)
+reddit.com##search-telemetry-tracker:has(> .search-answers-preview-section):remove()
+reddit.com##a[href^="/answers/"]
+
+# Yandex bullshit
+yandex.ru##.RsyaOrganic:remove()
+dzen.ru##[id=card-news-morda]:remove()
+
+# VK bullshit
+vk.com##.page_block[class*='--promo']:remove()
+vk.com##div[data-ad-view]:remove()
+
+# VK Videos crap
+vkvideo.ru##[id^=vk_video_short_videos]:remove()
+vkvideo.ru###movies:remove()
+vkvideo.ru###recommended_live_videos:remove()
+vkvideo.ru###serials:remove()
+vkvideo.ru###sport_videos:remove()
+vkvideo.ru###tvshow_playlists:remove()
+
+# Strapi, FFS
+docs.strapi.io##.ai-button:remove()
+docs.strapi.io##.kapa-widget-button:has-text(AI):remove()
