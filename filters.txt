@@ -99,6 +99,7 @@ m.youtube.com##ytm-chip-cloud-chip-renderer:has(.yt-core-attributed-string:has-t
 @@||github.githubassets.com/assets/packages_copilot-chat_utils_copilot-chat-events_ts-packages*$script
 @@||github.githubassets.com/assets/packages_copilot-chat_components_tracing_TraceProvider*$script
 @@||github.githubassets.com/assets/packages_copilot-chat_utils_copilot-local-storage_ts*$script
+@@||github.githubassets.com/assets/packages_react-profiling-mode_src_index_ts-packages_agent-sessions_components_copilot*$script
 
 ! Nuke all copilot assets
 ||github.githubassets.com/assets/*copilot*
@@ -177,6 +178,9 @@ superuser.com##.js-disable-askstack-new-link:remove()
 
 # SO Blog individual advertorials about LLMs
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-agents-for-your-digital-chores']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='from-multilingual-semantic-search-to-virtual-assistants']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='open-source-is-giving-you-choices-with-your-agent-systems']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='your-runbooks-are-obsolete-in-the-age-of-agents/']):remove()
 
 # ArsTechnica-specific annoyances
 arstechnica.com##.fides-overlay:remove()
@@ -212,3 +216,6 @@ vkvideo.ru###tvshow_playlists:remove()
 # Strapi, FFS
 docs.strapi.io##.ai-button:remove()
 docs.strapi.io##.kapa-widget-button:has-text(AI):remove()
+
+# Twich BS
+www.twitch.tv##.prime-offers
