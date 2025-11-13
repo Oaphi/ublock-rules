@@ -101,6 +101,8 @@ m.youtube.com##ytm-chip-cloud-chip-renderer:has(.yt-core-attributed-string:has-t
 @@||github.githubassets.com/assets/packages_copilot-chat_utils_copilot-local-storage_ts*$script
 @@||github.githubassets.com/assets/packages_react-profiling-mode_src_index_ts-packages_agent-sessions_components_copilot*$script
 @@||github.githubassets.com/assets/packages_copilot-chat_utils_language-info_ts-packages*$script
+@@||github.githubassets.com/assets/packages_history_history_ts-packages_soft-nav_state_ts-packages_copilot*$script
+@@||github.githubassets.com/assets/packages_use-client-value_use-client-value_ts-packages_agent-sessions*$script
 
 ! Nuke all copilot assets
 ||github.githubassets.com/assets/*copilot*
@@ -184,6 +186,10 @@ meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='open-source-is-givin
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='your-runbooks-are-obsolete-in-the-age-of-agents/']):remove()
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-agents-will-succeed']):remove()
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='live-from-the-openai-forum']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='vibe-coding-needs']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='less-gullible-than-your-ai']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-ick']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-code-means']):remove()
 
 # ArsTechnica-specific annoyances
 arstechnica.com##.fides-overlay:remove()
@@ -196,9 +202,11 @@ stackblitz.com##[class^='OpenInBold-container']:remove()
 
 docs.docker.com##.open-kapa-widget:remove()
 
-# Reddit "Answers" (LLM bullshit)
+# Reddit bullcrap
 reddit.com##search-telemetry-tracker:has(> .search-answers-preview-section):remove()
 reddit.com##a[href^="/answers/"]
+reddit.com##faceplate-tracker[noun=games_drawer]:remove()
+reddit.com##div[id*=answers-suggested-queries]:remove()
 
 # Yandex bullshit
 yandex.ru##.RsyaOrganic:remove()
@@ -222,3 +230,15 @@ docs.strapi.io##.kapa-widget-button:has-text(AI):remove()
 
 # Twich BS
 www.twitch.tv##.prime-offers
+
+# Stripe LLM integrations, ffs
+docs.stripe.com##a:has-text(Ask AI):remove()
+
+# TipTap, for the love of...
+tiptap.dev##button:has-text(Ask AI):remove()
+
+# et tu, vue-router?
+router.vuejs.org##.rulekit:remove()
+
+# StackOverflow ToS update on, eh, "ai"
+stackoverflow.com###announcement-banner:has-text(utilizes AI):remove()
