@@ -195,6 +195,9 @@ stackoverflow.com##.s-sidebarwidget--item:has(a[href*='how-to-create-agents']):r
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='stop-ai']):remove()
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='stack-overflow-ai-assist']):remove()
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='abstraction-but-for-robots']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='treating-your-agents']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-a-crystal']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='enterprise-ai']):remove()
 
 # Same as above, but for Meta Stack Overflow
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-agents-for-your-digital-chores']):remove()
@@ -212,6 +215,9 @@ meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='how-to-create-agents
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='stop-ai']):remove()
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='stack-overflow-ai-assist']):remove()
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='abstraction-but-for-robots']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='treating-your-agents']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-a-crystal']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='enterprise-ai']):remove()
 
 # ArsTechnica-specific annoyances
 arstechnica.com##.fides-overlay:remove()
