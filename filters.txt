@@ -198,6 +198,10 @@ stackoverflow.com##.s-sidebarwidget--item:has(a[href*='abstraction-but-for-robot
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='treating-your-agents']):remove()
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-a-crystal']):remove()
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='enterprise-ai']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-research']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='live-from-re-invent']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='aws-re-invent']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-a-normal-technology']):remove()
 
 # Same as above, but for Meta Stack Overflow
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-agents-for-your-digital-chores']):remove()
@@ -218,6 +222,10 @@ meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='abstraction-but-for-
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='treating-your-agents']):remove()
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-a-crystal']):remove()
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='enterprise-ai']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-research']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='live-from-re-invent']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='aws-re-invent']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-a-normal-technology']):remove()
 
 # ArsTechnica-specific annoyances
 arstechnica.com##.fides-overlay:remove()
@@ -276,9 +284,20 @@ meta.stackexchange.com###announcement-banner:has-text(utilizes AI):remove()
 stackoverflow.com###announcement-banner:has-text(enterprise AI):remove()
 meta.stackexchange.com###announcement-banner:has-text(enterprise AI):remove()
 
-# Stackoverflow's Big Bullshit Button (textarea)
+# StackOverflow's Big Bullshit Button (textarea)
 stackoverflow.com###ask-stack-initial-question:remove()
 stackoverflow.com###ask-stack-send:remove()
 stackoverflow.com##[for='ask-stack-initial-question']:remove()
 stackoverflow.com###mainbar > div > p:has-text(AI Assist):remove()
 stackoverflow.com###hide-this-if-you-want:remove()
+
+# StackOverflow's annoying unskippable welcome to chat popup
+chat.stackoverflow.com###welcome-to-chat-modal
+chat.stackexchange.com###welcome-to-chat-modal
+chat.meta.stackexchange.com###welcome-to-chat-modal
+
+# Don't want to do that, but "ai" ads are too much 
+makeappicon.com##oursky-ads
+
+# Cambridge, for the love of...
+dictionary.cambridge.org##a[href^='/assistant']:remove()
