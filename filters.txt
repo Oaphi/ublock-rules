@@ -202,6 +202,16 @@ stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-research']):remove()
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='live-from-re-invent']):remove()
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='aws-re-invent']):remove()
 stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-a-normal-technology']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-helping']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-bots']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='turn-ai']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='vibe-code']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='model-context-protocol']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-coding-agents']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='learning-with-ai']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='with-llms']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='for-ai-agents']):remove()
+stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-attention']):remove()
 
 # Same as above, but for Meta Stack Overflow
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-agents-for-your-digital-chores']):remove()
@@ -226,6 +236,16 @@ meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-research']):remov
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='live-from-re-invent']):remove()
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='aws-re-invent']):remove()
 meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-a-normal-technology']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-is-helping']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-bots']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='turn-ai']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='vibe-code']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='model-context-protocol']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-coding-agents']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='learning-with-ai']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='with-llms']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='for-ai-agents']):remove()
+meta.stackoverflow.com##.s-sidebarwidget--item:has(a[href*='ai-attention']):remove()
 
 # ArsTechnica-specific annoyances
 arstechnica.com##.fides-overlay:remove()
@@ -251,6 +271,7 @@ dzen.ru##[id=card-news-morda]:remove()
 # VK bullshit
 vk.com##.page_block[class*='--promo']:remove()
 vk.com##div[data-ad-view]:remove()
+vk.com##[data-testid="feed_apps_right_block"]:remove()
 
 # VK Videos crap
 vkvideo.ru##[id^=vk_video_short_videos]:remove()
@@ -301,3 +322,11 @@ makeappicon.com##oursky-ads
 
 # Cambridge, for the love of...
 dictionary.cambridge.org##a[href^='/assistant']:remove()
+
+# et tu, IMDB?
+imdb.com##[data-testid="ai-review-summary"]:remove()
+
+# tracking params
+*$removeparam=utm_campaign
+*$removeparam=utm_medium
+*$removeparam=utm_source
