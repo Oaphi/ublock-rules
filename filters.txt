@@ -177,6 +177,7 @@ stackoverflow.com###stacklive-helper-cta-popover:remove()
 /^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##li:has(> .js-beta-link):remove()
 
 # SO Blog individual advertorials about LLMs
+/^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##.s-sidebarwidget--item:has(a[href*='ai-world']):remove()
 /^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##.s-sidebarwidget--item:has(a[href*='ai-agents']):remove()
 /^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##.s-sidebarwidget--item:has(a[href*='from-multilingual-semantic-search-to-virtual-assistants']):remove()
 /^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##.s-sidebarwidget--item:has(a[href*='with-your-agent-systems']):remove()
