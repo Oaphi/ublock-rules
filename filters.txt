@@ -262,6 +262,9 @@ docs.stripe.com##a:has-text(Ask AI):remove()
 # TipTap, for the love of...
 tiptap.dev##button:has-text(Ask AI):remove()
 
+# Telegram "ai" "summaries"
+web.telegram.org##.message-action-buttons-sticky-zone:has(button.action-summary)
+
 # et tu, vue-router?
 router.vuejs.org##.rulekit:remove()
 
