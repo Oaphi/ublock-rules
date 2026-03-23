@@ -177,6 +177,7 @@ stackoverflow.com###stacklive-helper-cta-popover:remove()
 /^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##li:has(> .js-beta-link):remove()
 
 # SO Blog individual advertorials about LLMs
+/^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##.s-sidebarwidget--item:has(a[href*='ai-is-becoming']):remove()
 /^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##.s-sidebarwidget--item:has(a[href*='making-llm']):remove()
 /^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##.s-sidebarwidget--item:has(a[href*='ai-world']):remove()
 /^(?:\w+\.)?(?:askubuntu|mathoverflow|stackexchange|stackoverflow|serverfault|stackapps|superuser)\.(?:com|net)$/##.s-sidebarwidget--item:has(a:has-text(/AI tools/)):remove()
